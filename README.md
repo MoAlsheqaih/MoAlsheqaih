@@ -71,7 +71,6 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohammed-al-sheqaih-681019240/)  
 [![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MoAlsheqaih)  
-📧 [mohammadalsheqaih@gmail.com](mailto:mohammadalsheqaih@gmail.com)
 
 ---
 
