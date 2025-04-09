@@ -4,11 +4,12 @@
 
 <h1 align="center">Hi, I’m Mohammed Al Sheqaih 👋</h1>
 <p align="center">
-  <a href="[https://linkedin.com/in/your-linkedin](https://www.linkedin.com/in/mohammed-al-sheqaih-681019240/)">
+  <a href="https://www.linkedin.com/in/mohammed-al-sheqaih-681019240/">
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin&logoColor=white">
   </a>
-  <a href="[https://x.com/m50xy">
-    <img alt="Twitter" src="https://img.shields.io/badge/Twitter-@your-twitter-1DA1F2?logo=twitter&logoColor=white">
+  <br>
+  <a href="https://x.com/m50xy">
+    <img alt="Twitter" src="https://img.shields.io/badge/Twitter-@m50xy-1DA1F2?logo=twitter&logoColor=white">
   </a>
 </p>
 
@@ -27,11 +28,12 @@
 
 ## 🧰 Tech Stack
 
-| Languages                | Frameworks & Libraries    | DevOps & Databases    | Tools & Others        |
-|--------------------------|---------------------------|-----------------------|------------------------|
-| ![Python][python]        | ![React][react]           | ![PostgreSQL][psql]   | ![GitHub][github]      |
-| ![JavaScript][js]        | ![Node.js][node]          | ![SQL][sql]           | ![VSCode][vscode]      |
-| ![Java][java]            | ![Express][express]       | ![REST API][api]      | ![Docker][docker]      |
+| Languages                | Frameworks & Libraries    | DevOps & Databases    | ML Libraries           |   Tools & Others       |
+|--------------------------|---------------------------|-----------------------|------------------------|------------------------|
+| ![Python][python]        | ![React][react]           | ![PostgreSQL][psql]   | ![Pandas][pandas]      | ![GitHub][github]      |
+| ![JavaScript][js]        | ![Node.js][node]          | ![SQL][sql]           | ![NumPy][numpy]        | ![VSCode][vscode]      |
+| ![Java][java]            | ![Express][express]       | ![REST API][api]      | ![Scikit-Learn][skl]   |                        |
+|                          |                           |                       | ![Seaborn][seaborn]    |                        |
 
 [python]: https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white
 [js]: https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black
@@ -45,6 +47,10 @@
 [github]: https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white
 [vscode]: https://img.shields.io/badge/VS%20Code-007ACC?logo=visual-studio-code&logoColor=white
 [docker]: https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white
+[pandas]: https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white
+[numpy]: https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white
+[skl]: https://img.shields.io/badge/Scikit--Learn-F7931E?logo=scikit-learn&logoColor=white
+[seaborn]: https://img.shields.io/badge/Seaborn-3776AB?logo=python&logoColor=white
 
 ---
 
@@ -52,12 +58,14 @@
 
 ### 🚄 Railway Reservation System
 > A Web-based app using **Node.js, JavaScript, HTML/CSS**, and **PostgreSQL** to automate ticket booking and operations
+> - 🧰 **Tech Used:** HTML/CSS, JavaScript, Node.js, PostgreSQL
 
 ### 🍯 Thaheen (https://github.com/MoAlsheqaih/Thaheen)
-> An AI‑powered, interactive question‑generation and gamified quiz system for university students, using MERN stack. 
+> Currently building an AI‑powered, interactive question‑generation and gamified quiz system for university students, using MERN stack
+> - 🧰 **Tech Used:** HTML/CSS, JavaScript, React, Node.js, Express.js, MongoDB
 
 ### 📊🤖 Data Loan Analysis
-> Built a loan prediction model using Decision Tree and Naive Bayes classifiers with ~78% accuracy after preprocessing and scaling. Conducted EDA to identify trends and evaluated performance using confusion matrices.
+> Built a loan prediction model using Decision Tree and Naive Bayes classifiers with ~78% accuracy after preprocessing and scaling. Conducted EDA to identify trends and evaluated performance using confusion matrices
 
 ## 📫 Let's Connect!
 
