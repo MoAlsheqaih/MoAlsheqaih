@@ -20,7 +20,7 @@
 
 ## 🌟 About Me
 - 🎓 **Software Engineering Student @ KFUPM (Class of 2026)**  
-- 🚀 Passionate about **Web Development**, **AI**, and **Open-Source Contributions**
+- 🚀 Passionate about **Web Development**, **AI**, and **Cybersecurity**
 - 💡 Built multiple **full-stack web apps** and applied **machine learning** models in practical projects
 - 🌱 Always learning & exploring new technologies
 
