@@ -60,7 +60,7 @@
 > A Web-based app using **Node.js, JavaScript, HTML/CSS**, and **PostgreSQL** to automate ticket booking and operations
 > - 🧰 **Tech Used:** HTML/CSS, JavaScript, Node.js, PostgreSQL
 
-### 🍯 Thaheen (https://github.com/MoAlsheqaih/Thaheen)
+### 🍯 Thaheen 
 > Currently building an AI‑powered, interactive question‑generation and gamified quiz system for university students, using MERN stack
 > - 🧰 **Tech Used:** HTML/CSS, JavaScript, React, Node.js, Express.js, MongoDB
 
