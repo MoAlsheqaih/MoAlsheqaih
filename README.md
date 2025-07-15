@@ -62,7 +62,7 @@
 
 ### 🍯 Thaheen 
 > Currently building an AI‑powered, interactive question‑generation and gamified quiz system for university students, using MERN stack
-> - 🧰 **Tech Used:** HTML/CSS, JavaScript, React, Node.js, Express.js, MongoDB
+> - 🧰 **Tech Used:** React, TailwindCSS, Node.js, Express.js, MongoDB
 
 ### 📊🤖 Data Loan Analysis
 > Built a loan prediction model using Decision Tree and Naive Bayes classifiers with ~78% accuracy after preprocessing and scaling. Conducted EDA to identify trends and evaluated performance using confusion matrices
