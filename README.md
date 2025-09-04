@@ -20,7 +20,7 @@
 
 ## 🌟 About Me
 - 🎓 **Software Engineering Student @ KFUPM (Class of 2026)**  
-- 🚀 Passionate about **Web Development**, **AI**, and **Cybersecurity**
+- 🚀 Passionate about **AI/ML** and **Web Development**
 - 💡 Built multiple **full-stack web apps** and applied **machine learning** models in practical projects
 - 🌱 Always learning & exploring new technologies
 
@@ -61,7 +61,7 @@
 > - 🧰 **Tech Used:** HTML/CSS, JavaScript, Node.js, PostgreSQL
 
 ### 🍯 Thaheen 
-> Currently building an AI‑powered, interactive question‑generation and gamified quiz system for university students, using MERN stack
+>  an AI‑powered, interactive question‑generation and gamified quiz system for university students
 > - 🧰 **Tech Used:** React, TailwindCSS, Node.js, Express.js, MongoDB
 
 ### 📊🤖 Data Loan Analysis
