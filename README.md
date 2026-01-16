@@ -81,6 +81,4 @@
 
 ---
 
-> "Striving to become not just a software engineer, but a tech leader who solves real-world problems through innovation and collaboration."
-
 Thanks for visiting my profile! 🌟
