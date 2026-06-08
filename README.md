@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=900&color=58A6FF&center=true&vCenter=true&width=680&lines=Building+AI+for+the+Arabic+World+%F0%9F%8C%8D;Research-grade+ML+%7C+Production+Engineering;KFUPM+%C2%B7+GPA+3.85%2F4.0+%C2%B7+First+Honors;Open+to+AI+%2F+ML+%2F+SWE+Roles" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=900&color=58A6FF&center=true&vCenter=true&width=680&lines=Building+AI+for+the+Arabic+World+%F0%9F%8C%8D;Research-grade+ML+%7C+Production+Engineering;KFUPM+%C2%B7+First+Honors+%C2%B7+Dean%27s+List;Open+to+AI+%2F+ML+%2F+SWE+Roles" alt="Typing SVG"/>
 
 <br/><br/>
 
@@ -26,6 +26,20 @@ My work spans deep learning architectures (Conformer, CRNN+CTC, LoRA fine-tuning
 
 ---
 
+## ⭐ Highlights
+
+<div align="center">
+
+🥇 &nbsp;**Grand Champion · Industrithon 2025** — 1st Place, Consulting Track (KFUPM × Pure Consulting)<br/>
+🥇 &nbsp;**Computing Projects EXPO 2025** — 1st Place, Web Engineering Development Path (KFUPM)<br/>
+🎓 &nbsp;**Qimam Fellow** — 1 of 50 selected from 18,000+ applicants nationwide (~0.28% acceptance)<br/>
+🌍 &nbsp;**International Engineering Intern** — Halliburton, Singapore · **Volunteer Fellow** — Forward7, Tanzania<br/>
+📝 &nbsp;**Research output** — NeurIPS-format diagnostic study · technical reports exceeding published benchmarks
+
+</div>
+
+---
+
 ## 🎓 Studied at
 
 <div align="center"><br/>
@@ -36,7 +50,7 @@ My work spans deep learning architectures (Conformer, CRNN+CTC, LoRA fine-tuning
 
 <br/><br/>
 
-**BSc Software Engineering** &nbsp;·&nbsp; AI/ML Concentration &nbsp;·&nbsp; GPA **3.85 / 4.0** &nbsp;·&nbsp; First Honors · Dean's List
+**BSc Software Engineering** &nbsp;·&nbsp; AI/ML Concentration &nbsp;·&nbsp; First Honors · Dean's List · Aug 2021 – May 2026
 
 </div>
 
@@ -60,13 +74,23 @@ My work spans deep learning architectures (Conformer, CRNN+CTC, LoRA fine-tuning
 
 ## 🏆 Fellowships & Programs
 
-<div align="center">
+<div align="center"><br/>
 
-| Program | Role | When |
-|:---|:---|:---|
-| **Qimam Fellowship** | Fellow — 1 of 50 selected from 18,000+ applicants | Apr 2026 – |
-| **Misk Hub Launchpad** | Graduate — 10-week idea → MVP program | Jun – Aug 2024 |
-| **Forward7 Clean Cooking** | Volunteer Fellow — 1 of 10 Saudi students · Tanzania 🇹🇿 | Aug 2025 |
+<a href="https://qimam.com" title="Qimam Fellowship — 1 of 50 selected from 18,000+ applicants (Apr 2026)">
+  <img src="assets/qimam-logo.png" height="58" alt="Qimam Fellowship"/>
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://misk.org.sa" title="Misk Hub Launchpad — 10-week idea → MVP program (Jun – Aug 2024)">
+  <img src="assets/misk-logo.png" height="58" alt="Misk Foundation"/>
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://x.com/forward7sa" title="Forward7 Clean Cooking — Middle East Green Initiative, Tanzania (Aug 2025)">
+  <img src="assets/forward7-logo.png" height="58" alt="Forward7 — Middle East Green Initiative"/>
+</a>
+
+<br/><br/>
+
+**Qimam Fellow** (1 of 50 from 18,000+) &nbsp;·&nbsp; **Misk Launchpad Graduate** &nbsp;·&nbsp; **Forward7 Volunteer Fellow** (1 of 10 Saudi students)
 
 </div>
 
