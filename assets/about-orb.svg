@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="640" height="640" viewBox="0 0 640 640" fill="none" role="img" aria-label="Animated AI orb — building AI for the Arabic world">
+<defs>
+  <radialGradient id="orb-glow" cx="0.5" cy="0.5" r="0.6">
+    <stop offset="0" stop-color="#58A6FF" stop-opacity="0.55"/>
+    <stop offset="0.6" stop-color="#22D3EE" stop-opacity="0.20"/>
+    <stop offset="1" stop-color="#0d1117" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="orb-core" cx="0.5" cy="0.4" r="0.6">
+    <stop offset="0" stop-color="#a5f3fc"/>
+    <stop offset="0.4" stop-color="#22D3EE"/>
+    <stop offset="1" stop-color="#1f6feb" stop-opacity="0.7"/>
+  </radialGradient>
+  <linearGradient id="orb-rim" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#58A6FF"/>
+    <stop offset="0.5" stop-color="#7ee787"/>
+    <stop offset="1" stop-color="#f78166"/>
+  </linearGradient>
+  <radialGradient id="orb-bg" cx="0.5" cy="0.5" r="0.7">
+    <stop offset="0" stop-color="#161b22"/>
+    <stop offset="1" stop-color="#0d1117"/>
+  </radialGradient>
+  <filter id="orb-soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>
+  <filter id="orb-glw" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3"/></filter>
+  <filter id="orb-glwS" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <pattern id="orb-dots" x="0" y="0" width="26" height="26" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="0.8" fill="#58A6FF" fill-opacity="0.14"/>
+  </pattern>
+
+  <!-- Orbit paths (invisible) for keyword chips -->
+  <path id="orb-orbitA" d="M 320 320 m -210, 0 a 210,80 0 1,1 420,0 a 210,80 0 1,1 -420,0" fill="none"/>
+  <path id="orb-orbitB" d="M 320 320 m -210, 0 a 210,80 -25 1,1 420,0 a 210,80 -25 1,1 -420,0" fill="none"/>
+
+<style>
+@keyframes ob-pulse{0%,100%{transform:scale(1);opacity:0.95}50%{transform:scale(1.06);opacity:1}}
+@keyframes ob-rotate{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+@keyframes ob-rotate-rev{from{transform:rotate(0)}to{transform:rotate(-360deg)}}
+@keyframes ob-blink{0%,60%{opacity:1}80%,100%{opacity:0}}
+@keyframes ob-float-l{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes ob-node-pulse{0%,100%{r:2.5;opacity:0.6}50%{r:3.6;opacity:1}}
+.ob-core{transform-box:fill-box;transform-origin:center;animation:ob-pulse 4s ease-in-out infinite}
+.ob-ring1{transform-box:fill-box;transform-origin:320px 320px;animation:ob-rotate 28s linear infinite}
+.ob-ring2{transform-box:fill-box;transform-origin:320px 320px;animation:ob-rotate-rev 36s linear infinite}
+.ob-node{animation:ob-node-pulse 3s ease-in-out infinite}
+.ob-cur{animation:ob-blink 1s step-end infinite}
+.ob-float{transform-box:fill-box;transform-origin:center;animation:ob-float-l 4s ease-in-out infinite}
+.mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace}
+.sans{font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif}
+</style>
+</defs>
+
+<!-- Background -->
+<rect width="640" height="640" rx="24" fill="url(#orb-bg)"/>
+<rect width="640" height="640" rx="24" fill="url(#orb-dots)"/>
+
+<!-- Outer halo -->
+<circle cx="320" cy="320" r="230" fill="url(#orb-glow)" filter="url(#orb-soft)"/>
+
+<!-- Orbit ellipses (decorative) -->
+<g class="ob-ring1">
+  <ellipse cx="320" cy="320" rx="210" ry="80" fill="none" stroke="#22D3EE" stroke-opacity="0.35" stroke-width="1.2" stroke-dasharray="3 6"/>
+</g>
+<g class="ob-ring2">
+  <ellipse cx="320" cy="320" rx="210" ry="80" fill="none" stroke="#7ee787" stroke-opacity="0.32" stroke-width="1.2" stroke-dasharray="3 6" transform="rotate(35 320 320)"/>
+</g>
+
+<!-- Central neural cluster (nodes + connections, forming a "brain") -->
+<g filter="url(#orb-glwS)">
+  <!-- Neural network "brain" inside the orb -->
+  <g stroke="#7ee787" stroke-opacity="0.45" stroke-width="0.9" fill="none">
+    <line x1="270" y1="270" x2="320" y2="290"/>
+    <line x1="270" y1="270" x2="320" y2="330"/>
+    <line x1="270" y1="320" x2="320" y2="290"/>
+    <line x1="270" y1="320" x2="320" y2="330"/>
+    <line x1="270" y1="370" x2="320" y2="330"/>
+    <line x1="270" y1="370" x2="320" y2="290"/>
+    <line x1="320" y1="290" x2="370" y2="270"/>
+    <line x1="320" y1="290" x2="370" y2="320"/>
+    <line x1="320" y1="330" x2="370" y2="320"/>
+    <line x1="320" y1="330" x2="370" y2="370"/>
+  </g>
+  <!-- Inner glow core -->
+  <g class="ob-core">
+    <circle cx="320" cy="320" r="50" fill="url(#orb-core)" opacity="0.65"/>
+    <circle cx="320" cy="320" r="32" fill="#a5f3fc" opacity="0.85"/>
+    <circle cx="320" cy="320" r="14" fill="#ffffff" opacity="0.95"/>
+  </g>
+
+  <!-- Neural nodes around core -->
+  <g fill="#58A6FF">
+    <circle class="ob-node" cx="270" cy="270" r="3"/>
+    <circle class="ob-node" cx="270" cy="320" r="3" style="animation-delay:-0.6s"/>
+    <circle class="ob-node" cx="270" cy="370" r="3" style="animation-delay:-1.2s"/>
+    <circle class="ob-node" cx="370" cy="270" r="3" style="animation-delay:-1.8s"/>
+    <circle class="ob-node" cx="370" cy="320" r="3" style="animation-delay:-0.3s"/>
+    <circle class="ob-node" cx="370" cy="370" r="3" style="animation-delay:-2.4s"/>
+  </g>
+</g>
+
+<!-- Big rim circle around the orb (subtle) -->
+<circle cx="320" cy="320" r="78" fill="none" stroke="url(#orb-rim)" stroke-opacity="0.55" stroke-width="1.5"/>
+<circle cx="320" cy="320" r="120" fill="none" stroke="#58A6FF" stroke-opacity="0.18" stroke-width="0.8" stroke-dasharray="2 6"/>
+
+<!-- Floating concept chips arranged around the orb -->
+<g class="ob-float">
+  <rect x="60" y="190" width="105" height="28" rx="14" fill="#0d1117" stroke="#58A6FF" stroke-opacity="0.7"/>
+  <text x="113" y="208" text-anchor="middle" class="mono" font-size="11" fill="#58A6FF" font-weight="600">PyTorch</text>
+</g>
+<g class="ob-float" style="animation-delay:-1s">
+  <rect x="475" y="160" width="105" height="28" rx="14" fill="#0d1117" stroke="#7ee787" stroke-opacity="0.7"/>
+  <text x="528" y="178" text-anchor="middle" class="mono" font-size="11" fill="#7ee787" font-weight="600">Conformer</text>
+</g>
+<g class="ob-float" style="animation-delay:-2s">
+  <rect x="50" y="430" width="120" height="28" rx="14" fill="#0d1117" stroke="#f78166" stroke-opacity="0.7"/>
+  <text x="110" y="448" text-anchor="middle" class="mono" font-size="11" fill="#f78166" font-weight="600">Accessibility</text>
+</g>
+<g class="ob-float" style="animation-delay:-1.5s">
+  <rect x="480" y="450" width="100" height="28" rx="14" fill="#0d1117" stroke="#a78bfa" stroke-opacity="0.7"/>
+  <text x="530" y="468" text-anchor="middle" class="mono" font-size="11" fill="#a78bfa" font-weight="600">Research</text>
+</g>
+<g class="ob-float" style="animation-delay:-0.5s">
+  <rect x="245" y="80" width="150" height="28" rx="14" fill="#0d1117" stroke="#22D3EE" stroke-opacity="0.7"/>
+  <text x="320" y="98" text-anchor="middle" class="sans" font-size="11" fill="#22D3EE" font-weight="600">عربية · Arabic AI</text>
+</g>
+
+<!-- Caption at bottom -->
+<g transform="translate(320, 580)">
+  <text text-anchor="middle" class="mono" font-size="12" fill="#8b949e">// building AI for the Arabic world</text>
+  <rect class="ob-cur" x="156" y="-10" width="6" height="12" fill="#22D3EE"/>
+</g>
+
+<!-- Subtle border -->
+<rect x="0.5" y="0.5" width="639" height="639" rx="24" fill="none" stroke="#21262d" stroke-width="1"/>
+</svg>
