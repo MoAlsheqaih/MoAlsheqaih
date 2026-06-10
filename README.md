@@ -76,7 +76,7 @@ For me it's not the stack you reach for, it's whether the system feels obvious t
 <div align="center"><br/>
 
 <a href="https://www.kfupm.edu.sa" title="King Fahd University of Petroleum and Minerals">
-  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/76/KFUPM_logo.svg/200px-KFUPM_logo.svg.png" height="65" alt="KFUPM"/>
+  <img src="assets/kfupm-logo.jpg" height="65" alt="KFUPM"/>
 </a>
 
 <br/><br/>
@@ -93,7 +93,7 @@ For me it's not the stack you reach for, it's whether the system feels obvious t
 <div align="center"><br/>
 
 <a href="https://www.halliburton.com" title="Halliburton — International Software Engineer Intern, Singapore (Jun–Aug 2025)">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Halliburton_logo.svg/200px-Halliburton_logo.svg.png" height="42" alt="Halliburton"/>
+  <img src="assets/halliburton-logo.png" height="42" alt="Halliburton"/>
 </a>
 
 <br/>
@@ -110,7 +110,7 @@ For me it's not the stack you reach for, it's whether the system feels obvious t
 <div align="center"><br/>
 
 <a href="https://qimam.com" title="Qimam Fellowship — 1 of 50 selected from 18,000+ applicants (Apr 2026)">
-  <img src="assets/qimam-logo.png" height="58" alt="Qimam Fellowship"/>
+  <img src="assets/qimam-logo.jpeg" height="58" alt="Qimam Fellowship"/>
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://misk.org.sa" title="Misk Hub Launchpad — 10-week idea → MVP program (Jun – Aug 2024)">
