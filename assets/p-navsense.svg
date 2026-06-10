@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="720" viewBox="0 0 900 720" fill="none" role="img" aria-label="NavSense — Indoor navigation with UWB localization and haptic wearable">
+<defs>
+  <radialGradient id="ns-bg" cx="0.5" cy="0.5" r="0.7"><stop offset="0" stop-color="#0c1626"/><stop offset="1" stop-color="#0a1018"/></radialGradient>
+  <radialGradient id="ns-halo" cx="0.5" cy="0.5" r="0.55"><stop offset="0" stop-color="#22D3EE" stop-opacity="0.25"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/></radialGradient>
+  <linearGradient id="ns-route" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#7ee787"/>
+  </linearGradient>
+  <pattern id="ns-grid" width="36" height="36" patternUnits="userSpaceOnUse">
+    <path d="M36 0H0V36" fill="none" stroke="#13203a" stroke-width="0.8"/>
+  </pattern>
+  <filter id="ns-glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="2.5"/></filter>
+  <filter id="ns-soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="6"/></filter>
+<style>
+@keyframes ns-pulse{0%{r:8;opacity:0.9}100%{r:46;opacity:0}}
+@keyframes ns-vibe{0%{r:18;opacity:0.8}100%{r:42;opacity:0}}
+@keyframes ns-walk{0%,100%{transform:translateX(0)}50%{transform:translateX(12px)}}
+@keyframes ns-blink{0%,60%{opacity:1}80%,100%{opacity:0}}
+@keyframes ns-flow{to{stroke-dashoffset:-30}}
+@keyframes ns-node-pulse{0%,100%{opacity:0.6}50%{opacity:1}}
+.beacon-pulse{animation:ns-pulse 2.8s ease-out infinite}
+.vibe-pulse{animation:ns-vibe 1.6s ease-out infinite}
+.walker{transform-box:fill-box;transform-origin:center;animation:ns-walk 4s ease-in-out infinite}
+.route{stroke-dasharray:5 7;animation:ns-flow 1.3s linear infinite}
+.cur{animation:ns-blink 1s step-end infinite}
+.tag-pulse{animation:ns-node-pulse 2.4s ease-in-out infinite}
+.mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace}
+.sans{font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif}
+</style>
+</defs>
+
+<!-- Background -->
+<rect width="900" height="720" rx="22" fill="url(#ns-bg)"/>
+<rect width="900" height="720" rx="22" fill="url(#ns-grid)" opacity="0.5"/>
+<ellipse cx="450" cy="360" rx="320" ry="220" fill="url(#ns-halo)" filter="url(#ns-soft)"/>
+
+<!-- Floor plan outline (abstract) -->
+<g stroke="#22D3EE" stroke-opacity="0.35" stroke-width="2" fill="none">
+  <rect x="160" y="130" width="580" height="420" rx="14"/>
+  <!-- Internal walls -->
+  <line x1="380" y1="130" x2="380" y2="270"/>
+  <line x1="380" y1="370" x2="380" y2="550"/>
+  <line x1="540" y1="130" x2="540" y2="240"/>
+  <line x1="540" y1="320" x2="540" y2="550"/>
+  <line x1="160" y1="340" x2="280" y2="340"/>
+  <line x1="380" y1="340" x2="540" y2="340"/>
+</g>
+
+<!-- 4 UWB beacons in corners (with expanding pulse rings) -->
+<g>
+  <!-- Top-left beacon -->
+  <circle class="beacon-pulse" cx="200" cy="170" r="8" fill="none" stroke="#22D3EE" stroke-width="1.5"/>
+  <circle class="beacon-pulse" cx="200" cy="170" r="8" fill="none" stroke="#22D3EE" stroke-width="1.5" style="animation-delay:-1.4s"/>
+  <circle cx="200" cy="170" r="6" fill="#22D3EE" filter="url(#ns-glow)"/>
+  <text x="200" y="146" text-anchor="middle" class="mono" font-size="9" fill="#22D3EE">UWB-1</text>
+
+  <!-- Top-right beacon -->
+  <circle class="beacon-pulse" cx="700" cy="170" r="8" fill="none" stroke="#7ee787" stroke-width="1.5" style="animation-delay:-0.7s"/>
+  <circle class="beacon-pulse" cx="700" cy="170" r="8" fill="none" stroke="#7ee787" stroke-width="1.5" style="animation-delay:-2.1s"/>
+  <circle cx="700" cy="170" r="6" fill="#7ee787" filter="url(#ns-glow)"/>
+  <text x="700" y="146" text-anchor="middle" class="mono" font-size="9" fill="#7ee787">UWB-2</text>
+
+  <!-- Bottom-left beacon -->
+  <circle class="beacon-pulse" cx="200" cy="510" r="8" fill="none" stroke="#f78166" stroke-width="1.5" style="animation-delay:-1.0s"/>
+  <circle class="beacon-pulse" cx="200" cy="510" r="8" fill="none" stroke="#f78166" stroke-width="1.5" style="animation-delay:-2.4s"/>
+  <circle cx="200" cy="510" r="6" fill="#f78166" filter="url(#ns-glow)"/>
+  <text x="200" y="535" text-anchor="middle" class="mono" font-size="9" fill="#f78166">UWB-3</text>
+
+  <!-- Bottom-right beacon -->
+  <circle class="beacon-pulse" cx="700" cy="510" r="8" fill="none" stroke="#a78bfa" stroke-width="1.5" style="animation-delay:-1.8s"/>
+  <circle class="beacon-pulse" cx="700" cy="510" r="8" fill="none" stroke="#a78bfa" stroke-width="1.5" style="animation-delay:-0.4s"/>
+  <circle cx="700" cy="510" r="6" fill="#a78bfa" filter="url(#ns-glow)"/>
+  <text x="700" y="535" text-anchor="middle" class="mono" font-size="9" fill="#a78bfa">UWB-4</text>
+</g>
+
+<!-- Trilateration triangle lines from beacons to user (subtle) -->
+<g stroke-dasharray="2 4" stroke-width="1">
+  <line x1="200" y1="170" x2="450" y2="340" stroke="#22D3EE" stroke-opacity="0.35"/>
+  <line x1="700" y1="170" x2="450" y2="340" stroke="#7ee787" stroke-opacity="0.35"/>
+  <line x1="200" y1="510" x2="450" y2="340" stroke="#f78166" stroke-opacity="0.35"/>
+  <line x1="700" y1="510" x2="450" y2="340" stroke="#a78bfa" stroke-opacity="0.35"/>
+</g>
+
+<!-- Route line through the corridor -->
+<path d="M 230 470 Q 280 470 300 410 T 380 340 T 540 340 T 660 230"
+      stroke="url(#ns-route)" stroke-width="2.5" fill="none" class="route"/>
+
+<!-- User position (walking figure) -->
+<g class="walker">
+  <!-- Position marker -->
+  <circle cx="450" cy="340" r="22" fill="#22D3EE" fill-opacity="0.18" filter="url(#ns-soft)"/>
+  <circle cx="450" cy="340" r="14" fill="none" stroke="#22D3EE" stroke-opacity="0.8" stroke-width="1.5"/>
+  <!-- Simple stick figure -->
+  <circle cx="450" cy="324" r="6" fill="none" stroke="#a5f3fc" stroke-width="2"/>
+  <line x1="450" y1="330" x2="450" y2="352" stroke="#a5f3fc" stroke-width="2"/>
+  <line x1="450" y1="338" x2="442" y2="346" stroke="#a5f3fc" stroke-width="2"/>
+  <line x1="450" y1="338" x2="458" y2="346" stroke="#a5f3fc" stroke-width="2"/>
+  <line x1="450" y1="352" x2="445" y2="364" stroke="#a5f3fc" stroke-width="2"/>
+  <line x1="450" y1="352" x2="455" y2="364" stroke="#a5f3fc" stroke-width="2"/>
+</g>
+
+<!-- Position label -->
+<g transform="translate(485, 345)">
+  <rect x="0" y="-12" width="120" height="22" rx="11" fill="#0c1626" stroke="#22D3EE" stroke-opacity="0.7"/>
+  <circle cx="12" cy="-1" r="3" fill="#22D3EE" class="tag-pulse"/>
+  <text x="22" y="3" class="mono" font-size="10" fill="#a5f3fc">YOU · &lt;30cm</text>
+</g>
+
+<!-- Wristband + haptic waves in lower right corner -->
+<g transform="translate(675, 595)">
+  <!-- Vibration rings -->
+  <circle cx="0" cy="0" r="18" fill="none" stroke="#f78166" stroke-width="1.5" class="vibe-pulse"/>
+  <circle cx="0" cy="0" r="18" fill="none" stroke="#f78166" stroke-width="1.5" class="vibe-pulse" style="animation-delay:-0.8s"/>
+  <!-- Wristband -->
+  <rect x="-25" y="-12" width="50" height="24" rx="6" fill="#0c1626" stroke="#f78166" stroke-width="2"/>
+  <rect x="-25" y="-12" width="50" height="24" rx="6" fill="none" stroke="#f78166" stroke-opacity="0.4" stroke-width="4" filter="url(#ns-glow)"/>
+  <!-- Inner LED -->
+  <circle cx="0" cy="0" r="3" fill="#f78166" class="tag-pulse"/>
+  <text x="0" y="-32" text-anchor="middle" class="mono" font-size="10" fill="#f78166">haptic</text>
+</g>
+
+<!-- Latency badge top-right -->
+<g transform="translate(745, 595)">
+  <rect x="0" y="-14" width="120" height="28" rx="14" fill="#0c1626" stroke="#7ee787" stroke-opacity="0.6"/>
+  <text x="60" y="4" text-anchor="middle" class="mono" font-size="11" fill="#7ee787">87 ms · &lt;30 cm</text>
+</g>
+
+<!-- Caption at bottom -->
+<g transform="translate(450, 685)">
+  <text text-anchor="middle" class="mono" font-size="14" fill="#a5f3fc">UWB trilateration → BLE fusion → MIP route → haptic guidance</text>
+</g>
+<g transform="translate(450, 705)">
+  <text text-anchor="middle" class="mono" font-size="11" fill="#6e7681">// 18 specs met · 100% WCAG 2.1 AA · 419 SAR/unit BOM (77% below market)</text>
+</g>
+
+<!-- Subtle border -->
+<rect x="0.5" y="0.5" width="899" height="719" rx="22" fill="none" stroke="#21262d" stroke-width="1"/>
+</svg>
