@@ -20,11 +20,9 @@
 
 ## 👋 About Me
 
-I'm a software and AI/ML engineer from Dhahran, Saudi Arabia, focused on **Arabic-language AI** and **accessibility**. What I enjoy most is taking a research idea and turning it into something people can actually use.
+I'm an AI/ML engineer and software engineer from Dhahran, Saudi Arabia. I build systems that sit at the intersection of **research-grade ML and production engineering** — with a particular focus on Arabic-language AI and accessibility for underserved communities.
 
-A few I'm proud of: an Arabic sign-language recognizer that brought word error rate down to **8.76%**, a YOLOv8 + CRNN pipeline for Arabic bank checks that beat the published benchmark by **3.5 points**, and an indoor-navigation wearable for visually impaired users (**<30 cm** error, **87 ms** latency).
-
-KFUPM Software Engineering (First Honors), **Qimam Fellow** (1 of 50 from 18,000+), and a past **software engineering intern at Halliburton** in Singapore. I care less about which stack I reach for and more about whether the result feels obvious to the person using it.
+My work spans deep learning architectures (Conformer, CRNN+CTC, LoRA fine-tuning on DINOv2/CLIP), full-stack web, and embedded IoT. I've shipped models that exceed published academic benchmarks, authored NeurIPS-format research papers, and built cross-platform apps with real users.
 
 ---
 
@@ -36,7 +34,7 @@ KFUPM Software Engineering (First Honors), **Qimam Fellow** (1 of 50 from 18,000
 🥇 &nbsp;**Computing Projects EXPO 2025** — 1st Place, Web Engineering Development Path (KFUPM)<br/>
 🎓 &nbsp;**Qimam Fellow** — 1 of 50 selected from 18,000+ applicants nationwide (~0.28% acceptance)<br/>
 🌍 &nbsp;**International Engineering Intern** — Halliburton, Singapore · **Volunteer Fellow** — Forward7, Tanzania<br/>
-📝 &nbsp;**Research output** — a research-grade diagnostic study and technical reports that exceed published benchmarks
+📝 &nbsp;**Research output** — NeurIPS-format diagnostic study · technical reports exceeding published benchmarks
 
 </div>
 
@@ -47,7 +45,7 @@ KFUPM Software Engineering (First Honors), **Qimam Fellow** (1 of 50 from 18,000
 <div align="center"><br/>
 
 <a href="https://www.kfupm.edu.sa" title="King Fahd University of Petroleum and Minerals">
-  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/76/KFUPM_logo.svg/200px-KFUPM_logo.svg.png" height="65" alt="KFUPM"/>
+  <img src="assets/kfupm-logo.jpg" height="65" alt="KFUPM"/>
 </a>
 
 <br/><br/>
@@ -63,7 +61,7 @@ KFUPM Software Engineering (First Honors), **Qimam Fellow** (1 of 50 from 18,000
 <div align="center"><br/>
 
 <a href="https://www.halliburton.com" title="Halliburton — International Software Engineer Intern, Singapore (Jun–Aug 2025)">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Halliburton_logo.svg/200px-Halliburton_logo.svg.png" height="42" alt="Halliburton"/>
+  <img src="assets/halliburton-logo.png" height="42" alt="Halliburton"/>
 </a>
 
 <br/>
@@ -79,7 +77,7 @@ KFUPM Software Engineering (First Honors), **Qimam Fellow** (1 of 50 from 18,000
 <div align="center"><br/>
 
 <a href="https://qimam.com" title="Qimam Fellowship — 1 of 50 selected from 18,000+ applicants (Apr 2026)">
-  <img src="assets/qimam-logo.png" height="58" alt="Qimam Fellowship"/>
+  <img src="assets/qimam-logo.jpeg" height="58" alt="Qimam Fellowship"/>
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://misk.org.sa" title="Misk Hub Launchpad — 10-week idea → MVP program (Jun – Aug 2024)">
@@ -116,13 +114,15 @@ KFUPM Software Engineering (First Honors), **Qimam Fellow** (1 of 50 from 18,000
 
 [![](https://skillicons.dev/icons?i=js,react,nodejs,express,tailwind,mongodb,postgres&theme=dark)](https://skillicons.dev)
 
-**Mobile**
+**Mobile & IoT**
 
-[![](https://skillicons.dev/icons?i=flutter,dart&theme=dark)](https://skillicons.dev)
+[![](https://skillicons.dev/icons?i=flutter&theme=dark)](https://skillicons.dev)&nbsp;
+![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white)
+![BLE/UWB](https://img.shields.io/badge/BLE%20%2F%20UWB-0082FC?style=flat-square&logo=bluetooth&logoColor=white)
 
 **Tools**
 
-[![](https://skillicons.dev/icons?i=git,github,vscode,vercel&theme=dark)](https://skillicons.dev)
+[![](https://skillicons.dev/icons?i=git,github,vscode,vercel,latex&theme=dark)](https://skillicons.dev)
 
 ---
 
@@ -141,10 +141,10 @@ End-to-end deep learning pipeline for Arabic handwritten bank check processing.
 | Digit recognition accuracy | **95.17%** |
 | vs. published academic benchmark | **+3.5 percentage points** |
 
-- **YOLOv8s** for amount-region detection (63.35% mean IoU)
-- Dual **CRNN+CTC** branch: digits + Arabic text
-- RTL flip preprocessing + character-level vocabulary redesign
-- Full 20-page technical report · Trained on NVIDIA RTX 5060
+- **YOLOv8s** for amount-region detection (63.35% mean IoU)  
+- Dual **CRNN+CTC** branch: digits + Arabic text  
+- RTL flip preprocessing + character-level vocabulary redesign  
+- Full 20-page LaTeX technical report · Trained on NVIDIA RTX 5060
 
 `Python` `PyTorch` `YOLOv8` `CRNN` `CTC` `Albumentations`
 
@@ -163,9 +163,9 @@ End-to-end pipeline translating Arabic Sign Language videos → Arabic text.
 | **Conformer + CTC** | **13.04%** | — |
 | **Conformer + Seq2Seq** | — | **8.76%** |
 
-- 86-joint skeleton pose data (hands, face, body) · 7-type augmentation pipeline
-- Isharah 1000 dataset: 10,000+ labeled samples
-- Identified decoder collapse failure mode in Seq2Seq
+- 86-joint skeleton pose data (hands, face, body) · 7-type augmentation pipeline  
+- Isharah 1000 dataset: 10,000+ labeled samples  
+- Identified decoder collapse failure mode in Seq2Seq  
 - Only team to submit on the full 3,800-sample test set
 
 `Python` `PyTorch` `Conformer` `CTC Loss` `AdamW` `OneCycleLR`
@@ -178,20 +178,20 @@ End-to-end pipeline translating Arabic Sign Language videos → Arabic text.
 
 Cross-platform Flutter app + custom BLE-driven haptic ESP32 wristband for accessible indoor navigation.
 
-- UWB time-of-flight trilateration + BLE beacon fusion pipeline
-- MIP route optimizer (PuLP + CBC solver) on a 1,450-node floor graph
-- **87ms** mean end-to-end latency · **<30cm** localization error
-- 18 requirements met: full EN/AR bilingual UI · 185ms response under 200-user load
+- UWB time-of-flight trilateration + BLE beacon fusion pipeline  
+- MIP route optimizer (PuLP + CBC solver) on a 1,450-node floor graph  
+- **87ms** mean end-to-end latency · **<30cm** localization error  
+- 18 quantitative specs met: 100% WCAG 2.1 AA · full EN/AR bilingual UI · 185ms response under 200-user load  
 - Hardware BOM: 419 SAR/unit (77% below market)
 
-`Flutter` `Dart` `ESP32` `BLE` `UWB` `Python` `PuLP`
+`Flutter` `Dart` `ESP32` `Python` `PuLP` `BLE` `UWB`
 
 [![NavSense](https://img.shields.io/badge/View%20Repo-NavSense-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/MoAlsheqaih/NavSense)
 
 </details>
 
 <details>
-<summary>&nbsp;<b>🔬 AnyDoor Failure-Mode Diagnostic</b> — Computer Vision Research &nbsp;·&nbsp; <i>diagnostic study · A100 GPU · 9 ablations</i></summary>
+<summary>&nbsp;<b>🔬 AnyDoor Failure-Mode Diagnostic</b> — Computer Vision Research &nbsp;·&nbsp; <i>NeurIPS format · A100 GPU · 9 ablations</i></summary>
 <br/>
 
 Systematic diagnostic study of AnyDoor's zero-shot object-insertion pipeline on a 100-case stress benchmark (StressDoor).
@@ -205,9 +205,9 @@ Systematic diagnostic study of AnyDoor's zero-shot object-insertion pipeline on 
 - Pre-projection DINO + CLIP token fusion: viable only at w_dino=0.85 (+0.016 IHT overall)
 - Rank-8 LoRA on DINOv2 blocks 36–39: +0.027 stacked IHT with CFG schedule
 
-Documented in a 15-page technical paper · 9 ablation runs on NVIDIA A100
+15-page paper (NeurIPS format) · 9 ablation runs on NVIDIA A100
 
-`Python` `PyTorch` `DINOv2` `CLIP` `LoRA`
+`Python` `PyTorch` `DINOv2` `CLIP` `LoRA` `SMIL`
 
 </details>
 
@@ -217,9 +217,9 @@ Documented in a 15-page technical paper · 9 ablation runs on NVIDIA A100
 
 AI-powered gamified quiz generation platform for university students (Kahoot-style).
 
-- OpenAI API integration for automatic question generation
-- 4 user roles: Admin, Question Master, Regular User, Guest
-- Full-stack MERN — deployed to production
+- OpenAI API integration for automatic question generation  
+- 4 user roles: Admin, Question Master, Regular User, Guest  
+- Full-stack MERN — deployed on Vercel (frontend) + Heroku (backend)  
 - **Won 1st Place** at Computing Projects EXPO 2025 (Web Engineering Development Path, KFUPM)
 
 `React` `Node.js` `MongoDB` `Express.js` `TailwindCSS` `OpenAI API`
